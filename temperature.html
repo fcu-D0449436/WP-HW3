@@ -9,17 +9,19 @@
 		<script type = "text/javascript">
 		
 			var tempC;
-			var tempF;
 			
 			tempC = window.prompt("Please enter a Celsius temperature.");
-			tempF = 1.8*tempC + 32 ;
-		
+			
 			document.writeln(
 				"Celsius is  "+ tempC + "<br>" );
 				
 			document.writeln(
-				"Fahrenheit is  "+ tempF  );
-				
+				"Fahrenheit is  "+ CelsiusToFahrenheit(tempC)  );
+			
+			
+			function CelsiusToFahrenheit(tempC){
+				return 1.8*tempC + 32 ;
+			}
 		</script>
 	</head>
 	<body>
